@@ -19,7 +19,7 @@ vi ~/rockyiso_custom/ks.cfg
 # Sample Kickstart configuration
 clearpart --drives=sda --initlabel --disklabel=msdos
 autopart --type=lvm --nohome
-network --bootproto=static --ip=9.153.102.13 --netmask=255.255.255.0 --gateway=9.153.102.1 --nameserver=9.0.0.1 --device=ens192 --onboot=on --hostname=watsonxdata
+network --bootproto=static --ip=192.153.102.13 --netmask=255.255.255.0 --gateway=192.153.102.1 --nameserver=192.0.0.1 --device=ens192 --onboot=on --hostname=watsonxdata
 rootpw --plaintext IBM4ever
 user --name=watsonx --password IBM4ever --plaintext --gecos="watsonx" --groups=wheel
 timezone Europe/Berlin
